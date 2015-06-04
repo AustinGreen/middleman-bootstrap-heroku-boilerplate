@@ -1,0 +1,50 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+$box-model: border-box;
+
+*, 
+*:before, 
+*:after {
+  @include box-sizing($box-model);
+}
+
+body {
+  color: palette(black);
+  font-size: em(16px);
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
+}
+
+h1 {
+  font-weight: $font-weight--light;
+  font-size: em(42px);
+  line-height: (46px / 42px);
+  margin-bottom: em(70px, 42px);
+	color: palette(grey, x-dark);
+}
+
+h2 {
+  font-weight: $font-weight--thin;
+  font-size: em(24px);
+	color: palette(grey, light);
+}
+
+h3 {
+	font-size: em(18px);
+}
+
+h4 {
+	margin-top: em(22px, 14px);
+	margin-bottom: em(32px, 14px);
+	color: palette(grey, x-light);
+	text-transform: uppercase;
+	letter-spacing: $letter-space;
+	font-weight: $font-weight--medium;
+	font-size: em(14px);
+}
+
+a {
+	text-decoration: none;
+}
