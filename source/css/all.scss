@@ -37,3 +37,153 @@
 // States
 // ==========================================================================
 @import "states/index";
+
+// ==========================================================================
+// Example
+// ==========================================================================
+.navbar {
+	min-height: 75px;
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 0;
+
+  a {
+    transition: $clean-transition;
+  }
+}
+
+.navbar-default {
+  background-color: $white;
+}
+
+/* Logo */
+
+.navbar-brand {
+  padding-top: 21px;
+  padding-bottom: 21px;
+
+  @media screen and (max-width: $screen-md) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.container-fluid>.navbar-header {
+  margin-left: 5%;
+}
+
+/* Nav links */
+
+.navbar-nav>li>a {
+  padding-top: (75/2) * 1px;
+  padding-bottom: (75/2) * 1px;
+
+  @media screen and (max-width: $screen-md) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: 5%;
+}
+
+/* Collapse button */
+
+.navbar-toggle {
+  margin-top: 20.5px;
+}
+
+#intro {
+	top: 0;
+	height: 800px;
+	background-image: url('https://download.unsplash.com/photo-1433463002246-9d846c114eb8');
+	background-attachment: fixed;
+	@include box-shadow(rgba(0,0,0,.2) 0 0 60px 10px inset);
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing {
+	padding-top: 100px;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
