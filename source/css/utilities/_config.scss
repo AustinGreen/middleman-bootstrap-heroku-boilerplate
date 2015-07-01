@@ -4,7 +4,9 @@
 
 // Font Stacks
 
-$font-family--primary    : Helvetica, Arial, sans-serif;
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 // Font Weights
 
@@ -20,16 +22,23 @@ $white : #fff;
 $black : #0b0b0b;
 $grey  : #797e83;
 
-$wild-sand      : #f5f3f3;
+$fountain-blue  : #52bab3;
+$emerald        : #5ece7f;
+$sunglo         : #e67478;
+$coral          : #ff784f;
+$purple-majesty : #9279c3;
+$scooter        : #39add1;
 
 // Color Usage
 
-$color-primary   : $black;
+$color-primary   : $fountain-blue;
+$color-secondary : $scooter;
+$color-accent    : $emerald;
 $color-shadow    : rgba($black, .2);
 
 // Color Palette Modifiers
 
-$palettes: (
+$color-palettes: (
   grey: (
     xx-light : lighten($grey, 43%),
     x-light  : lighten($grey, 35%),
@@ -38,11 +47,21 @@ $palettes: (
     dark     : darken($grey, 8%),
     x-dark   : darken($grey, 16%)
   ),
-	black: (
-		light    : lighten($black, 10%),
-		base     : $black,
-		dark     : darken($black, 10%)
-	)
+  black: (
+    light    : lighten($black, 10%),
+    base     : $black,
+    dark     : darken($black, 10%)
+  )
+);
+
+// UI Colors
+
+$ui-colors: (
+  default : $fountain-blue,
+  success : $emerald,
+  error   : $sunglo,
+  warning : $coral,
+  info    : $purple-majesty
 );
 
 // Text
@@ -81,6 +100,6 @@ $golden-ratio: 1.61803398875;
 
 // Media Queries
 
-$screen-sm       : 420px;
-$screen-md       : 768px;
-$screen-lg       : 1024px;
+$brkpoint-sm       : 420px;
+$brkpoint-md       : 768px;
+$brkpoint-lg       : 1024px;
