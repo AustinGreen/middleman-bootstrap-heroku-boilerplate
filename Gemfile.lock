@@ -216,6 +216,3 @@ DEPENDENCIES
   unicorn
   wdm (~> 0.1.0)
   zippy_static_cache
-
-BUNDLED WITH
-   1.10.3

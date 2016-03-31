@@ -5,7 +5,7 @@ source 'http://rubygems.org'
 # Specify ruby version
 # ruby "2.1.2"
 
-gem "middleman", "~>3.3.6"
+gem "middleman", "~>3.3.12"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
@@ -17,7 +17,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # Include Bootstrap
-gem 'bootstrap-sass', '~> 3.3.5'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 
 gem 'autoprefixer-rails'
